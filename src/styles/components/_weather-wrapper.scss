@@ -1,0 +1,211 @@
+.weather-wrapper {
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    height: 100vh;
+
+    .dark-container {
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        .weather-header {
+
+            p {
+                color: $white;
+                text-align: center;
+                font: 1rem $font_bold;
+                text-shadow: 0px 0px 10px #000;
+            }
+        }
+
+        .weather-main-components {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            animation-delay: 0.4s;
+            
+            dl {
+                color: $white;
+
+                span {
+                    font-size: 7.5rem;
+                    text-align: center;
+                    display: block;
+                    margin: 0 auto;
+                    color: $yellow;
+                }
+
+                dd {
+                    text-align: center;
+                    font: 1.2rem $font_bold;
+                    text-shadow: 0px 0px 10px #000;
+                }
+
+                .elements {
+                    text-align: left;
+                    font: 0.9rem $font_bold;
+                    padding: 4px 0 4px 0;
+                    
+                }
+            }
+
+            dl:nth-of-type(2) {
+                margin-left: 70px;
+
+                dd {
+                    font: 3.5rem $font_reg;
+                }
+            }
+
+            dl:nth-of-type(3) {
+                background: rgba(250, 250, 250, 0.1);
+                padding: 20px;
+                border-radius: 20px;
+
+                dd {
+                    font-family: $font_reg;
+                }
+            }
+        }
+
+        .forecast-history-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .forecast {
+                width: 49%;
+                background: rgba(250, 250, 250, 0.1);
+                padding: 20px;
+                border-radius: 20px;
+
+                h3 {
+                    color: $white;
+                    font: 1rem $font_reg;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    background: rgba(250, 250, 250, 0.1);
+                    border-radius: 20px;
+                    padding: 4px;
+                }
+
+                .forecast-days {
+                    justify-content: space-between;
+                    align-items: center;
+                    display: flex;
+
+                    .forecast-day {
+                        width: 30%;
+                        color: $white;
+                        text-align: center;
+                        transition: 0.2s ease-in-out;
+                        padding: 10px;
+                        cursor: pointer;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background: rgba(250, 250, 250, 0.1);
+                        }
+
+                        &.selected {
+                            background: rgba(0, 123, 255, 0.3);
+                            border: 2px solid #007bff;
+                            // transform: translateY(-5px);
+                            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+                        }
+
+                        h4 {
+                            font-family: $font_bold;
+                            font: 1rem $font_reg;
+                            margin-bottom: 6px;
+                        }
+
+                        span {
+                            text-align: center;
+                            margin: 0 auto;
+                            font-size: 2.5rem;
+                            color: $yellow;
+                        }
+
+                        p {
+                            font-family: $font_reg;
+                            font: 0.8rem $font_reg;
+                            margin-top: 6px;
+                        }
+                    }
+                }
+            }
+
+            .history {
+                width: 49%;
+                background: rgba(250, 250, 250, 0.1);
+                padding: 20px;
+                border-radius: 20px;
+
+                h3 {
+                    color: $white;
+                    font: 1rem $font_reg;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    background: rgba(250, 250, 250, 0.1);
+                    border-radius: 20px;
+                    padding: 4px;
+                }
+
+                .previous-days {
+                    justify-content: space-between;
+                    align-items: center;
+                    display: flex;
+
+                    .previous-day {
+                        width: 30%;
+                        color: $white;
+                        text-align: center;
+                        transition: 0.2s ease-in-out;
+                        padding: 10px;
+                        cursor: pointer;
+                        border-radius: 10px;
+
+                        &:hover {
+                            background: rgba(250, 250, 250, 0.1);
+                        }
+
+                        &.selected {
+                            background: rgba(0, 123, 255, 0.3);
+                            border: 2px solid #007bff;
+                            // transform: translateY(-5px);
+                            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+                        }
+
+                        h4 {
+                            font-family: $font_bold;
+                            font: 1rem $font_reg;
+                            margin-bottom: 6px;
+                        }
+
+                        span {
+                            text-align: center;
+                            margin: 0 auto;
+                            font-size: 2.5rem;
+                            color: $yellow;
+                        }
+
+                        p {
+                            font-family: $font_reg;
+                            font: 0.8rem $font_reg;
+                            margin-top: 6px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

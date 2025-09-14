@@ -1,0 +1,51 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	font: 62.5% $font_bold;
+	min-width: 1200px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: $background;
+}
+
+.wrapper {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+h1 {
+	font: 2.5rem $font_light;
+	color: #fff;
+}
+
+
+
+
+////////////////////////////////////////////////////
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+// ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+// 	color: #fff;
+//   }
+//   ::-moz-placeholder { /* Firefox 19+ */
+// 	color: #fff;
+//   }
+//   :-ms-input-placeholder { /* IE 10+ */
+// 	color: #fff;
+//   }
+//   :-moz-placeholder { /* Firefox 18- */
+// 	color: #fff;
+//   }

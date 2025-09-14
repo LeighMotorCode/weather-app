@@ -1,0 +1,65 @@
+@media screen and (max-width: 520px) {
+
+    body {
+        width: 100%;
+        min-width: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 0.8em;
+        height: 100%;
+    }
+    
+    .wrapper {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+
+    .weather-wrapper {
+        background-attachment: fixed;
+        height: 100%;
+
+        .dark-container {
+            padding: 40px 0 40px 0;
+    
+            .weather-header {
+                margin-bottom: 50px !important;
+            }
+    
+            .weather-main-components {
+                flex-direction: column;
+                margin-bottom: 50px !important;
+    
+                dl {
+                    width: 100%;
+    
+                    span {
+                        font-size: 4.5rem !important;
+                        margin-bottom: 20px !important;
+                    }
+    
+                    dd {
+                        font-size: 1.5rem;
+                    }
+                }
+    
+                dl:nth-of-type(2) {
+                    margin-left: 0 !important;
+                    margin-bottom: 50px !important;
+                }
+            }
+        }
+    
+        .forecast-history-wrapper {
+            flex-direction: column;
+    
+            .forecast {
+                width: 100% !important;
+                margin-bottom: 10px;
+            }
+    
+            .history {
+                width: 100% !important;
+            }
+        }
+    }
+}
